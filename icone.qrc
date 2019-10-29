@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/Icon">
+        <file>Icon/arancione.png</file>
+        <file>Icon/Bianco.png</file>
+        <file>Icon/Blu.png</file>
+        <file>Icon/brown.png</file>
+        <file>Icon/Gray.png</file>
+        <file>Icon/multicolor.png</file>
+        <file>Icon/black.png</file>
+        <file>Icon/Square.png</file>
+        <file>Icon/Line.png</file>
+        <file>Icon/Pink.png</file>
+        <file>Icon/yellow.png</file>
+        <file>Icon/Green.png</file>
+        <file>Icon/Triangle.jpg</file>
+        <file>Icon/red.png</file>
+        <file>Icon/rightRotate.png</file>
+        <file>Icon/LeftRotate.png</file>
+        <file>Icon/reverse.png</file>
+    </qresource>
+</RCC>

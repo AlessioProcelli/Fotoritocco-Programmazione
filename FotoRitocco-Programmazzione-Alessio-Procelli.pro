@@ -29,19 +29,27 @@ SOURCES += \
         brush.cpp \
         controller.cpp \
         graphicsview.cpp \
+        line.cpp \
         main.cpp \
         model.cpp \
+        rectangle.cpp \
+        triangle.cpp \
         view.cpp
 
 HEADERS += \
         baseeffect.h \
         brush.h \
         controller.h \
+        directions.h \
         effectsinterface.h \
         graphicsview.h \
+        line.h \
         model.h \
         observer.h \
+        rectangle.h \
+        shape.h \
         subject.h \
+        triangle.h \
         view.h \
         viewinterface.h
 
@@ -52,3 +60,8 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    icone.qrc
+
+DISTFILES +=

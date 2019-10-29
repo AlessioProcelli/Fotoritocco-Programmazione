@@ -8,21 +8,23 @@
 class BaseEffect:public EffectsInterface
 {
 public:
-    BaseEffect();
-    float getMatrixEffect();
-    void  apply(QPixmap & originalmatrix);
+    enum class effect{Blur,
+                      Sharpening,
+                      EdgeDetection,
+                      Contrast
+                     };
+    BaseEffect(enum effect e);
+    void virtual apply(QPixmap* originalmatrix);
     //effetti
-    void setBlur();//setta l'effetto sfocatura
-    void setEdgeDetection();
-    void setSharpening();
 
 
 private:
 
 
     void processing (QImage & img,int height, int width);
+    void processingBlur (QImage* img,int height, int width);
     int divisore;
-    float matrixeffect[3][3];
+    float **matrixeffect;
 };
 
 #endif // BASEEFFECT_H

@@ -6,7 +6,9 @@
 
 Model::Model()
 {
-
+QPixmap frontImage(widthGraphicsView,heightGraphicsView);
+frontImage.fill(Qt::white);
+addState(frontImage);
 }
 
 void Model::addState(QPixmap img){
@@ -17,11 +19,39 @@ void Model::addState(QPixmap img){
 }
 
 void Model::removeState(){
-    if(!state.empty())
+    if(state.size()>1){
+        deletedStated.push_front(state.front());
         state.pop_front();
-    notify();
+    Model::notify();}
 }
-//ricordarsi i controlli lista vuota e prima pagina bianca!
+
+
+void Model::cleanDeletedState(){
+    deletedStated.clear();
+}
+void Model::removeDeletedState(){
+    deletedStated.pop_front();
+}
+void Model::setNextDeletedStated(QPixmap pix){
+    nextDeletedStated=pix;
+}
+QPixmap Model::getNextDeletedStated(){
+    return nextDeletedStated;
+}
+QPixmap Model::getCurrentDeletedState(){
+
+    return deletedStated.front();
+}
+
+
+
+void Model::restoreState(){
+    if(!deletedStated.empty()){
+        addState(deletedStated.front());
+        deletedStated.pop_front();
+    }
+}
+
 QPixmap* Model::getCurrentState(){
     return &state.front();
 }
@@ -38,6 +68,22 @@ void Model::removeObserver(Observer* o){
    observers.remove(o);
 }
 void Model::notify(){
-    for(auto observer:observers){
+  for(auto observer:observers){
         observer->update();}
 }
+
+void Model::setDrawing(bool allowed){
+    allowDrawing=allowed;
+}
+bool Model::getDrawing(){
+    return allowDrawing;
+}
+
+void Model::setShape(bool allowed){
+    allowShape=allowed;
+}
+
+bool Model::getShape(){
+    return allowShape;}
+
+

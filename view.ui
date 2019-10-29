@@ -6,49 +6,464 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>809</width>
-    <height>559</height>
+    <width>1294</width>
+    <height>795</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>View</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="gridLayoutWidget">
+   <widget class="QWidget" name="gridLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>50</y>
-      <width>95</width>
-      <height>441</height>
+      <x>130</x>
+      <y>10</y>
+      <width>841</width>
+      <height>31</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QPushButton" name="pushButton">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="edgeDetection">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>EdgeDetection</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="blur">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Blur</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
-      <widget class="QPushButton" name="pushButton_2">
+     <item>
+      <widget class="QPushButton" name="sharpening">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>PushButton</string>
+        <string>Sharpening</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="contrast">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Contrast</string>
        </property>
       </widget>
      </item>
     </layout>
    </widget>
-   <widget class="GraphicsView" name="graphicsView">
+   <widget class="QWidget" name="gridLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>50</y>
-      <width>451</width>
-      <height>301</height>
+      <x>0</x>
+      <y>80</y>
+      <width>121</width>
+      <height>121</height>
      </rect>
     </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="horizontalSpacing">
+      <number>2</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>0</number>
+     </property>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="chooseColor">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icone.qrc">
+         <normaloff>:/Icon/Icon/multicolor.png</normaloff>:/Icon/Icon/multicolor.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pink">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icone.qrc">
+         <normaloff>:/Icon/Icon/Pink.png</normaloff>:/Icon/Icon/Pink.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="red">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icone.qrc">
+         <normaloff>:/Icon/Icon/red.png</normaloff>:/Icon/Icon/red.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="white">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icone.qrc">
+         <normaloff>:/Icon/Icon/Bianco.png</normaloff>:/Icon/Icon/Bianco.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="green">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icone.qrc">
+         <normaloff>:/Icon/Icon/Green.png</normaloff>:/Icon/Icon/Green.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="brown">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icone.qrc">
+         <normaloff>:/Icon/Icon/brown.png</normaloff>:/Icon/Icon/brown.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="black">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icone.qrc">
+         <normaloff>:/Icon/Icon/black.png</normaloff>:/Icon/Icon/black.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="gray">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icone.qrc">
+         <normaloff>:/Icon/Icon/Gray.png</normaloff>:/Icon/Icon/Gray.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="blue">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icone.qrc">
+         <normaloff>:/Icon/Icon/Blu.png</normaloff>:/Icon/Icon/Blu.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="orange">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icone.qrc">
+         <normaloff>:/Icon/Icon/arancione.png</normaloff>:/Icon/Icon/arancione.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="currentColor">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>240</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Color</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="paint">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Paint</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="thickness">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>360</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="wrapping">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::PlusMinus</enum>
+    </property>
+    <property name="showGroupSeparator" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="suffix">
+     <string>px</string>
+    </property>
+    <property name="prefix">
+     <string/>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="singleStep">
+     <number>2</number>
+    </property>
+    <property name="stepType">
+     <enum>QAbstractSpinBox::DefaultStepType</enum>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+    <property name="displayIntegerBase">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>440</y>
+      <width>131</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="rectangle">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icone.qrc">
+         <normaloff>:/Icon/Icon/Square.png</normaloff>:/Icon/Icon/Square.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="triangle">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icone.qrc">
+         <normaloff>:/Icon/Icon/Triangle.jpg</normaloff>:/Icon/Icon/Triangle.jpg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>35</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="line">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="icone.qrc">
+         <normaloff>:/Icon/Icon/Line.png</normaloff>:/Icon/Icon/Line.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>80</width>
+         <height>60</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>330</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Thickness</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>215</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Current Color</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>40</y>
+      <width>841</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="GraphicsView" name="graphicsView"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="leftRotate">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icone.qrc">
+           <normaloff>:/Icon/Icon/LeftRotate.png</normaloff>:/Icon/Icon/LeftRotate.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="reverse">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icone.qrc">
+           <normaloff>:/Icon/Icon/reverse.png</normaloff>:/Icon/Icon/reverse.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="rightRotate">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icone.qrc">
+           <normaloff>:/Icon/Icon/rightRotate.png</normaloff>:/Icon/Icon/rightRotate.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -56,8 +471,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>809</width>
-     <height>26</height>
+     <width>1294</width>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -65,6 +480,9 @@
      <string>File</string>
     </property>
     <addaction name="actionOpen"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="actionSave"/>
    </widget>
    <addaction name="menuFile"/>
   </widget>
@@ -81,6 +499,33 @@
    <property name="text">
     <string>Open</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
@@ -88,12 +533,14 @@
   <customwidget>
    <class>GraphicsView</class>
    <extends>QGraphicsView</extends>
-   <header location="global">graphicsview.h</header>
+   <header>graphicsview.h</header>
    <slots>
     <slot>mousePressed(Qmouseevent)</slot>
    </slots>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="icone.qrc"/>
+ </resources>
  <connections/>
 </ui>

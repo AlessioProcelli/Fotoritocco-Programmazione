@@ -8,7 +8,14 @@ class Brush
 {
 public:
     Brush();
-   void draw(QPixmap& matrix,int x,int y);
+    Brush(int tikness,QRgb color);
+   void draw(QPixmap* matrix,int x,int y);
+
+   void setTickness(int t);
+   void setColor(int red, int green ,int blue);
+   int getTickness();
+   QColor getColor();
+
 private:
    QColor color;
    int tickness;
